@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@heroicons/react@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.6.tgz#35dd26987228b39ef2316db3b1245c42eb19e324"
+  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
+
 "@next/env@12.2.2":
   version "12.2.2"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.2.2.tgz#cc1a0a445bd254499e30f632968c03192455f4cc"
@@ -558,6 +563,13 @@ react-dom@18.1.0:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
 
+react-twitter-embed@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/react-twitter-embed/-/react-twitter-embed-4.0.4.tgz#4a6b8354acc266876ff1110b9f648518ea20db6d"
+  integrity sha512-2JIL7qF+U62zRzpsh6SZDXNI3hRNVYf5vOZ1WRcMvwKouw+xC00PuFaD0aEp2wlyGaZ+f4x2VvX+uDadFQ3HVA==
+  dependencies:
+    scriptjs "^2.5.9"
+
 react@18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.1.0.tgz#6f8620382decb17fdc5cc223a115e2adbf104890"
@@ -606,6 +618,11 @@ scheduler@^0.22.0:
   integrity sha512-6QAm1BgQI88NPYymgGQLCZgvep4FyePDWFpXVK+zNSUgHwlqpJy8VEh8Et0KxTACS4VWwMousBElAZOH9nkkoQ==
   dependencies:
     loose-envify "^1.1.0"
+
+scriptjs@^2.5.9:
+  version "2.5.9"
+  resolved "https://registry.yarnpkg.com/scriptjs/-/scriptjs-2.5.9.tgz#343915cd2ec2ed9bfdde2b9875cd28f59394b35f"
+  integrity sha512-qGVDoreyYiP1pkQnbnFAUIS5AjenNwwQBdl7zeos9etl+hYKWahjRTfzAZZYBv5xNHx7vNKCmaLDQZ6Fr2AEXg==
 
 source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
