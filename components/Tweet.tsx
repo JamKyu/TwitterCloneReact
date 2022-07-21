@@ -50,7 +50,7 @@ function Tweet({ tweet }: Props) {
         "https://twirpz.files.wordpress.com/2015/06/twitter-avi-gender-balanced-figure.png",
     };
 
-    const result = await fetch(`/api/addComment`, {
+    const result = await fetch(`/api/addComments`, {
       body: JSON.stringify(comment),
       method: "POST",
     });
