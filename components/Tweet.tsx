@@ -7,7 +7,7 @@ import {
   SwitchHorizontalIcon,
   UploadIcon,
 } from "@heroicons/react/outline";
-// import { HeartIcon as HeartSolidIcon } from "@heroicons/react/solid";
+import { HeartIcon as HeartSolidIcon } from "@heroicons/react/solid";
 import { fetchComments } from "../utils/fetchComments";
 import { useSession } from "next-auth/react";
 import toast from "react-hot-toast";
@@ -20,6 +20,7 @@ function Tweet({ tweet }: Props) {
   const [commentBoxOpen, setCommentBoxOpen] = useState<boolean>(false);
   const [input, setInput] = useState<string>("");
   const { data: session } = useSession();
+  const [liked, setLiked] = useState(false);
 
   const refreshComments = async () => {
     const comments: Comment[] = await fetchComments(tweet._id);
@@ -104,9 +105,18 @@ function Tweet({ tweet }: Props) {
         <div className="flex cursor-not-allowed items-center space-x-3 text-zinc-500">
           <SwitchHorizontalIcon className="h-5 w-5" />
         </div>
-        <div className="flex cursor-pointer items-center space-x-3 text-zinc-500">
-          <HeartIcon className="h-5 w-5" />
-          {/* <HeartSolidIcon className="h-5 w-5 text-red-700" /> */}
+        <div
+          className="flex cursor-pointer items-center space-x-3 text-zinc-500"
+          onClick={() => session && setLiked(!liked)}
+        >
+          {!liked ? (
+            <HeartIcon className="h-5 w-5" />
+          ) : (
+            <>
+              <HeartSolidIcon className="h-5 w-5 text-red-700" />
+              <p>1</p>
+            </>
+          )}
         </div>
         <div className="flex cursor-not-allowed items-center space-x-3 text-zinc-500">
           <UploadIcon className="h-5 w-5" />
