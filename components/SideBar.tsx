@@ -28,7 +28,11 @@ function SideBar() {
       <SideBarRow Icon={MailIcon} title="Messages" />
       <SideBarRow Icon={BookmarkIcon} title="Bookmarks" />
       <SideBarRow Icon={CollectionIcon} title="Lists" />
-      <SideBarRow onClick={session ? signOut : signIn} Icon={UserIcon} title={session ? "Sign Out" : "Sign In"} />
+      <SideBarRow
+        onClick={session ? signOut : signIn}
+        Icon={UserIcon}
+        title={session ? "Sign Out" : "Sign In"}
+      />
       <SideBarRow Icon={DotsCircleHorizontalIcon} title="More" />
     </div>
   );

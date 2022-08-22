@@ -100,7 +100,9 @@ function TweetBox({ setTweets }: Props) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             type="text"
-            placeholder="What's happening?"
+            placeholder={
+              session ? "What's happening?" : "Please Sign In to Tweet"
+            }
             className="h-20 w-full text-xl outline-none placeholder:text-xl placeholder:text-zinc-500 bg-transparent"
           />
           <div className="flex items-center">
