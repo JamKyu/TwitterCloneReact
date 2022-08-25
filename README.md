@@ -16,7 +16,7 @@ Twitter clone using React, Next.js, Tailwind.css, Typescript, Sanity CMS, Twitte
 - Authentication via NextAuth and sign in via Twitter
 - While logged in, user can post mock tweets, leave replies, and like tweets
 - Responsive UI with Tailwind CSS
-- User generated posts are stored and managed through Sanity CMS.
+- User generated posts are stored and managed through Sanity CMS
 
 
 ## Roadmap
